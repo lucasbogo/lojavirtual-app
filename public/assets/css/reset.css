@@ -1,0 +1,11 @@
+.navbar-default {
+    background-color: beige;
+    border-color: aqua;
+    border-radius: 0%;
+}
+
+.dropdown-menu {
+    background: beige;
+    border-radius: 0px;
+    box-shadow: none;
+}
