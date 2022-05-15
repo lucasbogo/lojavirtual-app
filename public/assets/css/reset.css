@@ -1,11 +1,16 @@
 .navbar-default {
-    background-color: beige;
-    border-color: aqua;
-    border-radius: 0%;
+    background-color: #02042d;
+    border-color: #02042d;
+    border-radius: 0px;
 }
 
-.dropdown-menu {
-    background: beige;
+.dropdown-menu{
+    background: #02042d;
     border-radius: 0px;
     box-shadow: none;
+}
+
+.form-control{
+    border-radius: 0px;
+    height: 50px;
 }
