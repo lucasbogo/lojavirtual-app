@@ -31,9 +31,9 @@ return [
     |
     */
 
-    'lifetime' => env('SESSION_LIFETIME', 120),
+    'lifetime' => env('SESSION_LIFETIME', 120), // Tempo de vida da sessão no navehador do cliente;
 
-    'expire_on_close' => false,
+    'expire_on_close' => false, // Fechar a sessão quando o cliente encerrar a aplicação web;
 
     /*
     |--------------------------------------------------------------------------
@@ -46,7 +46,7 @@ return [
     |
     */
 
-    'encrypt' => false,
+    'encrypt' => false, // Encriptografar a sessão;
 
     /*
     |--------------------------------------------------------------------------
@@ -59,7 +59,7 @@ return [
     |
     */
 
-    'files' => storage_path('framework/sessions'),
+    'files' => storage_path('framework/sessions'), // Localização dos arquivos Session;
 
     /*
     |--------------------------------------------------------------------------

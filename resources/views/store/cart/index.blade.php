@@ -14,28 +14,33 @@
         </tr>
     </thead>
     <tbody>
-        @for($i = 1; $i <= 5; $i++)
+        @forelse($products as $product)<!--Listar Produtos Dinamicamente-->
         <tr>
             <td>
                 <div>
-                    <img src="{{url('assets/images/temp/fallout3.jpg')}}" alt="" class="product-item-img-cart">
-                    <p class="cart-name-item">My Product Name</p>
+                    <img src="{{url("assets/images/temp/{$product['item']->image}")}}" alt="" class="product-item-img-cart">
+                    <p class="cart-name-item">{{$product['item']->name}}</p><!--Exibir nome dinamicamente-->
                 </div>
             </td>
-            <td>R$ 30,00</td>
+            <td>R$ {{$product['item']->price}}</td><!--Exibir preço dinamicamente-->
             <td>
-                <a href="" class="item-add-remove">-</a>
-                2
-                <a href="" class="item-add-remove">+</a>
+                <a href="{{route('decrement.cart', $product['item']->id)}}" class="item-add-remove">-</a>
+                {{$product['qtd']}}<!--Exibir quantidade do produto dinamicamente-->
+                <a href="{{route('add.cart', $product['item']->id)}}" class="item-add-remove">+</a>
             </td>
-            <td>R$ 60,00</td>
+            <td>R$ {{$product['qtd'] * $product['item']->price}}</td><!--Exibir subtotal do produto dinamicamente-->
         </tr>
-        @endfor
+        @empty
+        <tr>
+            <td colspan="20">Carrinho Vazio!</td>   
+        </tr> 
+
+        @endforelse
     </tbody>
 </table>
 
 <div class="total-cart">
-    <p><strong>Total: </strong> R$ 5.000,00</p>
+    <p><strong>Total: </strong> R$ {{$total}}</p><!--Exibir a soma do subtotal de todos os produtos-->
 </div>
 
 <div class="cart-finish">
