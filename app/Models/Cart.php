@@ -101,4 +101,10 @@ class Cart extends Model
         // Retorna o valor da lógica loop implmentada acima [SOMA PRODUTOS CARRINHO]
         return $total;
     }
+
+    // Método para mostrar o total de itens no ícone carrinho localizado no header
+    public function totalItems()
+    {
+        return count($this->items); // Contador de itens...
+    }
 }

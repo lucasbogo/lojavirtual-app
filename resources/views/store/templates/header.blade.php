@@ -9,7 +9,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="{{route('store.home.index')}}">
-        <img src="{{url('assets/images/Logotipo-01.png')}}" alt="" class="logo">
+        <img src="{{url('assets/images/Logotipo-01.png')}}" alt="NewModern" class="logo">
         </a>
     </div>
 
@@ -18,23 +18,36 @@
       
       <ul class="nav navbar-nav navbar-right">
         <li>
-          <a href="{{route('store.cart.index')}}">
+          <a href="{{route('store.cart.index')}}"><!--redirencionamento para carrinho da loja-->
                 Meu Carrinho <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                <span class="badge">0</span>
+                <span class="badge">
+                  @if (Session::has('cart'))
+                      {{Session::get('cart')->totalItems()}}
+                  @else
+                      0
+                  @endif
+
+                </span>
             </a>
         </li>
+        @if( auth()->check() )<!--verificar se usuario está logado, se estiver mostra o dropdown-menu; se não mostra o link-login -->
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-            Usuário
+            {{auth()->user()->name}} <!--Helper para exibir nome de usuário dinamicamente na view-->
             <span class="caret"></span>
         </a>
         <ul class="dropdown-menu">
-          <li><a href="{{route('store.user.profile')}}">Perfil</a></li>
-          <li><a href="#">Alterar Senha</a></li>
+          <li><a href="{{route('store.user.profile')}}">Perfil</a></li><!--redirecionamento para entrar no perfil-->
+          <li><a href="{{route('user.password')}}">Alterar Senha</a></li><!--redirencionamento para alterar senha-->
           <li role="separator" class="divider"></li>
-          <li><a href="#">Sair</a></li>
+          <li><a href="{{route('store.user.logout')}}">Sair</a></li><!--redirencionamento para logout-->
           </ul>
         </li>
+        @else
+        <li>
+          <a href="{{route('login')}}">Login</a>
+        </li>
+        @endif
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

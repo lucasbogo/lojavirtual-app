@@ -14,3 +14,22 @@
     border-radius: 0px;
     height: 50px;
 }
+
+.panel-default{
+    border-color: #dfe0f1;
+}
+
+.panel{
+    border-radius: 0px;
+}
+
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: #bcbff8;
+    border-color: #ddd;
+}
+
+.panel-heading {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}

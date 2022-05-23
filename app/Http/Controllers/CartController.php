@@ -16,8 +16,11 @@ class CartController extends Controller
         // Nome título carrinho dinamico
         $title = 'Meu Carrinho de Compras';
 
-        // Armazenar a sessão do usuário no carrinho de compras
-        $cart = Session::get('cart');
+        /* Armazenar a sessão do usuário no carrinho de compras
+         * Verifica se ja existe uma sessão
+         * Se não existe, cria-se uma nova sessão
+         */
+        $cart = Session::has('cart') ? Session::get('cart') : new Cart;
 
         // Chamar o método total pela view
         $total =  $cart->total();
