@@ -27,13 +27,13 @@ img.product-item-img{}
     text-transform: uppercase;
 }
 .btn-buy{
-    background: #02042d;
+    background: #a6aaff;;
     border-radius: 0px;
     width: 100%;
     color: #FFF;
 }
 .btn-buy:hover{
-    background: #080919;
+    background: #a6aaff;
     color: #FFF;
 }
 
@@ -48,13 +48,13 @@ img.product-item-img{}
 }
 .item-add-remove{
     font-size: 2em;
-    color: #02042d;
+    color: #a6aaff;
     font-weight: bold;
 }
 
 .total-cart{
     float: right;
-    background: #CCC;
+    background: #a6aaff;;
     padding: 20px 40px;
 }
 .total-cart p{
@@ -68,7 +68,7 @@ img.product-item-img{}
     float: right;
     clear: both;
     margin: 40px 0px;
-    background: #268820;
+    background: #a6aaff;
     padding: 15px 50px;
     color: #FFF;
     font-weight: bold;

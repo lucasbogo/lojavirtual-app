@@ -1,11 +1,11 @@
 .navbar-default {
-    background-color: #bcbff8;
-    border-color: #c0c2ee;
+    background-color: #a6aaff;;
+    border-color: #a6aaff;;
     border-radius: 0px;
 }
 
 .dropdown-menu{
-    background: #dfe0f1;
+    background: #a6aaff;;
     border-radius: 0px;
     box-shadow: none;
 }
@@ -16,7 +16,7 @@
 }
 
 .panel-default{
-    border-color: #dfe0f1;
+    border-color: #a6aaff;;
 }
 
 .panel{
