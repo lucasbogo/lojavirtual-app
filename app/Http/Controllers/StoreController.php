@@ -13,12 +13,13 @@ class StoreController extends Controller
         // Mostrar Titulo na View | return view('store.home.index', compact ('title',...))
         $title = 'NewModern HomePage';
 
-        /* Recuperar todos os produtos | Chamar isso na View abaixo em: compact('title','products');
+        // Recuperar todos os produtos | Chamar isso na View abaixo em: compact('title','products');
         $products = Product::all();
-        */
+        
 
-        // Recuperar produtos pelo o id em ordem decrescente
-        $products = Product::orderBy('id','DESC')->get();
+        /* Recuperar produtos pelo o id em ordem decrescente
+         * $products = Product::orderBy('id','DESC')->get();
+         */
 
         return view('store.home.index', compact('title','products'));
     }

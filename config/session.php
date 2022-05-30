@@ -33,7 +33,7 @@ return [
 
     'lifetime' => env('SESSION_LIFETIME', 120), // Tempo de vida da sessão no navehador do cliente;
 
-    'expire_on_close' => false, // Fechar a sessão quando o cliente encerrar a aplicação web;
+    'expire_on_close' => true, // Fechar a sessão quando o cliente encerrar a aplicação web;
 
     /*
     |--------------------------------------------------------------------------

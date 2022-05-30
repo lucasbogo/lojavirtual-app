@@ -10,7 +10,7 @@
       </button>
       <!--redirecionamento p/ home ao clickar na logo-->
       <a class="navbar-brand" href="{{route('store.home.index')}}">
-        <img src="{{url('assets/images/Logotipo-01.png')}}" alt="NewModern" class="logo">
+        <img src="{{url('assets/images/logotipo.png')}}" alt="NewModern" class="logo">
         </a>
     </div>
 

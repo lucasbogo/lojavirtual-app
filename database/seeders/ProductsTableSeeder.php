@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
 use Illuminate\Database\Seeder;
 use App\Models\Product;
 
@@ -17,50 +17,32 @@ class ProductsTableSeeder extends Seeder
     public function run()
     {
         Product::create([
-            'name' => 'Product Name'. uniqid(date('YmdHis')), // unique id - data atual
-            'image' => 'fallou3.jpg',    //url('assets/images/tmp')
-            'description' => 'Descricao do Produto Aqui'. uniqid(date('YmdHis')), // unique id - data atual
-            'price' => 10.2, // valor fixo
+            'name'        => 'The Evil Within',// uniqid(date('YmdHis')), // unique id - data atual  
+            'description' => 'Genêro: Survival Horror; XboxOne; Bethesda', // uniqid(date('YmdHis')), // unique id - data atual
+            'image'       => 'produto1.png',
+            'price'       => 10.2, 
         ]);
 
         Product::create([
-            'name' => 'Product Name'. uniqid(date('YmdHis')), // unique id - data atual
-            'image' => 'fallou4.jpg',    //url('assets/images/tmp')
-            'description' => 'Descricao do Produto Aqui'. uniqid(date('YmdHis')), // unique id - data atual
-            'price' => 10.2, // valor fixo
+            'name'        => 'The Evil Within 2',// uniqid(date('YmdHis')), // unique id - data atual
+            'description' => 'Genêro: Survival Horror; XboxOne; Bethesda', // uniqid(date('YmdHis')), // unique id - data atual
+            'image'       => 'produto2.png',
+            'price'       => 10.2, 
         ]);
 
         Product::create([
-            'name' => 'Product Name'. uniqid(date('YmdHis')), // unique id - data atual
-            'image' => 'fallou3.jpg',    //url('assets/images/tmp')
-            'description' => 'Descricao do Produto Aqui'. uniqid(date('YmdHis')), // unique id - data atual
-            'price' => 10.2, // valor fixo
+            'name'        => 'Fallout 3', // uniqid(date('YmdHis')), // unique id - data atual
+            'description' => 'Genêro: RPG; XboxOne; Bethesda', //uniqid(date('YmdHis')), // unique id - data atual
+            'image'       => 'produto3.png',
+            'price'       => 10.2, 
         ]);
 
         Product::create([
-            'name' => 'Product Name'. uniqid(date('YmdHis')), // unique id - data atual
-            'image' => 'fallou4.jpg',    //url('assets/images/tmp')
-            'description' => 'Descricao do Produto Aqui'. uniqid(date('YmdHis')), // unique id - data atual
-            'price' => 10.2, // valor fixo
+            'name'        => 'Fallout 4', // uniqid(date('YmdHis')), // unique id - data atual
+            'description' => 'Genêro: RPG; XboxOne; Bethesda', //uniqid(date('YmdHis')), // unique id - data atual
+            'image'       => 'produto4.png',
+            'price'       => 10.2, 
         ]);
 
-        Product::create([
-            'name' => 'Product Name'. uniqid(date('YmdHis')), // unique id - data atual
-            'image' => 'fallou3.jpg',    //url('assets/images/tmp')
-            'description' => 'Descricao do Produto Aqui'. uniqid(date('YmdHis')), // unique id - data atual
-            'price' => 10.2, // valor fixo
-        ]);
-
-        Product::create([
-            'name' => 'Product Name'. uniqid(date('YmdHis')), // unique id - data atual
-            'image' => 'fallou4.jpg',    //url('assets/images/tmp')
-            'description' => 'Descricao do Produto Aqui'. uniqid(date('YmdHis')), // unique id - data atual
-            'price' => 10.2, // valor fixo
-        ]);
-
-        
-
-
-      
     }
 }

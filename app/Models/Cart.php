@@ -12,11 +12,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Session;
-use PhpParser\Node\Expr\Cast\Unset_;
+
 
 class Cart extends Model
 {
-    use HasFactory;
+     use HasFactory;
 
     // Atributo 'items' que recebe array vazio por padrão
     private $items = [];
@@ -25,11 +25,14 @@ class Cart extends Model
     public function __construct()
     {
         // Lógica para verificar se sessão existe
-        if( Session::has('cart')) {
+        if(Session::has('cart')) {
 
-            $cart = Session::get('cart');
+            // Recuperar itens do carrinho
+           $cart = Session::get('cart');
 
-            $this->items = $cart->items;
+           // Recebe um objeto da Model cart
+           $this->items = $cart->items;
+
         }
             
     }
@@ -37,15 +40,19 @@ class Cart extends Model
     // Método para adicionar no carrinho: Recebe como parâmetro o produto à ser adicionado no carrinho
     public function add(Product $product)
     {
-        // Se existir um produto no array, incrementar mais um para o item já adicionado
+        // Se existir um produto no array...
         if(isset($this->items[$product->id])) {
+
+            // Incrementar mais um para o item já adicionado
             $this->items[$product->id] = [
                 'item' => $product,
                 'qtd'  => $this->items[$product->id]['qtd'] + 1,
             ];
 
+        // Caso Contrário...
         }else {
-            // Se não existir produto no array, adicionar novo produto
+
+             // Adicionar novo produto
             $this->items[$product->id] = [
                 'item' => $product,
                 'qtd'  => 1,
@@ -56,7 +63,7 @@ class Cart extends Model
     // Método para Decrementar item do carrinho]
     public function decrementItem(Product $product)
     {
-        // 
+        // Se existir  produtos no array
         if(isset($this->items[$product->id])){
 
             // Se a quantidade do item for igual a 1 [EXCLUIR]
@@ -98,7 +105,7 @@ class Cart extends Model
             $total += $subTotal;
         }
 
-        // Retorna o valor da lógica loop implmentada acima [SOMA PRODUTOS CARRINHO]
+        // Retorna o valor da lógica loop implmentada acima [SOMA-PRODUTOS-CARRINHO]
         return $total;
     }
 
@@ -107,4 +114,5 @@ class Cart extends Model
     {
         return count($this->items); // Contador de itens...
     }
+
 }

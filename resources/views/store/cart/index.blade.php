@@ -14,23 +14,28 @@
         </tr>
     </thead>
     <tbody>
-        @forelse($products as $product)<!--Listar Produtos Dinamicamente-->
+        <!--Listar Produtos Dinamicamente-->
+        @forelse($products as $product)
         <tr>
             <td>
                 <div>
                     <img src="{{url("assets/images/temp/{$product['item']->image}")}}" alt="" class="product-item-img-cart">
-                    <p class="cart-name-item">{{$product['item']->name}}</p><!--Exibir nome dinamicamente-->
+                    <!--Exibir nome-produto dinamicamente-->
+                    <p class="cart-name-item">{{$product['item']->name}}</p>
                 </div>
             </td>
-            <td>R$ {{$product['item']->price}}</td><!--Exibir preço dinamicamente-->
+            <!--Exibir preço dinamicamente-->
+            <td>R$ {{$product['item']->price}}</td>
             <td>
                 <a href="{{route('decrement.cart', $product['item']->id)}}" class="item-add-remove">-</a>
-                {{$product['qtd']}}<!--Exibir quantidade do produto dinamicamente-->
+                <!--Exibir quantidade do produto dinamicamente-->
+                {{$product['qtd']}}
                 <a href="{{route('add.cart', $product['item']->id)}}" class="item-add-remove">+</a>
             </td>
-            <td>R$ {{$product['qtd'] * $product['item']->price}}</td><!--Exibir subtotal do produto dinamicamente-->
+            <!--Exibir subtotal do produto dinamicamente-->
+            <td>R$ {{$product['qtd'] * $product['item']->price}}</td>
         </tr>
-        @empty
+        @empty<!--se não existe nenhum produto, mostrar mensagem "Carrinho Vazio!"-->
         <tr>
             <td colspan="20">Carrinho Vazio!</td>   
         </tr> 
@@ -40,7 +45,8 @@
 </table>
 
 <div class="total-cart">
-    <p><strong>Total: </strong> R$ {{$total}}</p><!--Exibir a soma do subtotal de todos os produtos-->
+    <!--Exibir a soma do subtotal de todos os produtos-->
+    <p><strong>Total: </strong> R$ {{$total}}</p>
 </div>
 
 <div class="cart-finish">

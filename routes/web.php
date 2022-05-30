@@ -13,10 +13,10 @@ Route::get('/', [StoreController::class, 'index'])->name('store.home.index');
 Route::get('/carrinho', [CartController::class, 'index'])->name('store.cart.index');
 
 // Rota para adicionar itens no carrinho [CARRRINHO | ADD-CART]
-Route::get('add-cart/{id}', [CartController::class, 'add'])->name('add.cart');
+Route::get('adicionar-carrinho/{id}', [CartController::class, 'add'])->name('add.cart');
 
 // Rota para decrementar e excluir itens no carrinho [CARRRINHO | DECREMENT-CART]
-Route::get('decrement-cart/{id}', [CartController::class, 'decrement'])->name('decrement.cart');
+Route::get('decrementar-carrinho/{id}', [CartController::class, 'decrement'])->name('decrement.cart');
 
 // Rota para visualização do .profile PerfilUsuário encontrada em /views/store/user [PERFIL]
 Route::get('/meu-perfil', [UserController::class, 'profile'])->name('store.user.profile');
@@ -25,7 +25,8 @@ Route::get('/meu-perfil', [UserController::class, 'profile'])->name('store.user.
 Auth::routes();
 
 /* Rota para efetuar logout de usuário encontrada no dropdown sair [LOGIN]
-Route::get('/login', [UserController::class, 'login'])->name('store.user.login'); */
+ * Route::get('/login', [UserController::class, 'login'])->name('store.user.login'); 
+ */
 
 // Rota para efetuar logout de usuário encontrada no dropdown sair [LOGOUT]
 Route::get('/logout', [UserController::class, 'logout'])->name('store.user.logout');
@@ -40,10 +41,10 @@ Route::group(['middleware' => 'auth'],function() {
    Route::get('/atualizar-perfil', [UserController::class, 'update'])->name('user.profile');
 
    // Rota para visualizar a senha do Usuário  [PASSWORD]
-   Route::get('/minha-senha', [UserController::class, 'password'])->name('store.user.password');
+   Route::get('/minha-senha', [UserController::class, 'password'])->name('user.password');
 
    // Rota para atualização da senha do Usuário [ATUALIZAR-SENHA]
-   Route::get('/atualizar-senha', [UserController::class, 'passwordUpdate'])->name('store.user.password');
+   Route::get('/atualizar-senha', [UserController::class, 'passwordUpdate'])->name('user.password');
 });
 
 /*

@@ -59,7 +59,7 @@ class CartController extends Controller
     {
         $product = Product::find($id);
         if( !$product )
-            return redirect()->route('home');
+            return redirect()->route('store.home.index');
         
         $cart = new Cart;
         $cart->decrementItem($product);

@@ -10,5 +10,7 @@ use Illuminate\Database\Eloquent\Model;
 class Product extends Model
 {
     use HasFactory;
+
+    // Fillable = denominaão para os campos que podem ser preenchidos.
     protected $fillable = ['name', 'description', 'price'];
 }

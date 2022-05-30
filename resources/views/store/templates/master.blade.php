@@ -11,7 +11,7 @@
         <script src="https://kit.fontawesome.com/ed493577c4.js" crossorigin="anonymous"></script>
 
         <!--Favicon-->
-        <link rel="icon" type="image/png" href="{{url('assets/images/LogoTipoNewModern.ico')}}">
+        <link rel="icon" type="image/png" href="{{url('assets/images/favicon.ico')}}">
 
         <!--Fonts-->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
