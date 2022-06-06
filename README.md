@@ -13,7 +13,47 @@ Loja Virtual desenvolvida como trabalho obrigatório para a disciplina de **Proj
 -  **Banco de dados tratado com o padrão Factory** 
 -  **Padrão MVC**
 -  **API PayPal**
+----------------------------------------------------------------------------------------------------------------------------------------------------------
 
+## PHP 8.1.6
+
+#### Sobre:
+
+Criada por Rasmus Lerdof, PHP é uma linguagem interpretada livre usada originalmente apenas para o desenvolvimento de aplicações presentes e atuantes no lado do servidor, capazes de gerar conteúdo dinâmico na World Wide Web. Hoje ela é uma das linguagens mais populares para desenvolvimento web.
+
+#### Instalação:
+
+- Atulizar Gerenciador de Pacotes
+```
+sudo apt update
+```
+- Adicionar PPA for PHP 8.1
+```
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:ondrej/php
+sudo apt update
+```
+- Instalar PHP 8.1 para Apache
+```
+sudo apt install php8.1
+```
+- Verificar se a instalação foi bem-sucedida e a versão instalada
+``` 
+php -v
+```
+- Instalar PHP 8.1 para Nginx
+```
+sudo apt install php8.1-fpm
+```
+- Verificar se a instalação foi bem-sucedida e a versão instalada
+``` 
+php-fpm8.1 -v
+```
+
+- Instalar Extensões para PHP
+```
+sudo apt install php8.1-common php8.1-mysql php8.1-xml php8.1-xmlrpc php8.1-curl php8.1-gd php8.1-imagick php8.1-cli php8.1-dev php8.1-imap php8.1-mbstring php8.1-opcache php8.1-soap php8.1-zip php8.1-redis php8.1-intl -y
+```
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 <p align="center"><img src="public/assets/images/composerlogo.png" width="250" height="250"></p>
 
@@ -45,7 +85,7 @@ curl -sS https://getcomposer.org/installer -o composer-setup.php
 sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 ```
 
-- Verificar se a instalção foi bem-sucedida e a versão instalada
+- Verificar se a instalação foi bem-sucedida e a versão instalada
 ``` 
 composer --version
 ```
