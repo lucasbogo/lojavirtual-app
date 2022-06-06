@@ -1,4 +1,4 @@
-<p align="center">![](public/assets/images/logotipo.png</p>
+<p align="center">![](public/assets/images/logotipo.png)</p>
 
 # NewModern Loja Virtual
 
