@@ -1,4 +1,4 @@
-<p align="center">![]([public/assets/images/logotipo.png](https://github.com/lucasbogo/lojavirtual-app/blob/main/public/assets/images/logotipo.png)</p>
+<p align="center">![](https://github.com/lucasbogo/lojavirtual-app/blob/main/public/assets/images/logotipo.png)</p>
 
 # NewModern Loja Virtual
 
