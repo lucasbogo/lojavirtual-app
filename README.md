@@ -1,8 +1,10 @@
-<p align="center">![](public/assets/images/logotipo.png)</p>
+<p align="center">![](logo/LogoTipoNewModern.png)</p>
 
 # NewModern Loja Virtual
 
-### Loja Virtual desenvolvida em PHP 8.1.6 com LARAVEL 9.12.2 como trabalho obrigatório para a disciplina de Projeto Integrador I do curso de Tecnologia em Ánalise e Desenvolvimento de Sistemas.
+## Sobre:
+
+Loja Virtual desenvolvida em **PHP 8.1.6** com **LARAVEL 9.12.2** como trabalho obrigatório para a disciplina de Projeto Integrador I do curso de Tecnologia em Ánalise e Desenvolvimento de Sistemas.
 
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
