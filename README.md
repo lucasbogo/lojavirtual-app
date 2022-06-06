@@ -24,7 +24,7 @@ Criada por Rasmus Lerdof, PHP é uma linguagem interpretada livre usada original
 
 #### Instalação:
 
-- Atulizar Gerenciador de Pacotes
+- Atualizar Gerenciador de Pacotes
 ```
 sudo apt update
 ```
