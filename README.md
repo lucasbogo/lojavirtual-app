@@ -25,11 +25,13 @@ Composer é uma ferramenta de gerenciamento de dependências em PHP. Essa ferram
 #### Instalação:
 
 - Atulizar Gerenciador de Pacotes
-```sudo apt update
+```
+sudo apt update
 ```
 
 - Instalar os os pacotes necessários
-```sudo apt install php-cli unzip zip
+```
+sudo apt install php-cli unzip zip
 ```
 
 - Baixar...
@@ -38,11 +40,13 @@ curl -sS https://getcomposer.org/installer -o composer-setup.php
 ```
 
 - Instalar Composer globalmente
-```sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+```
+sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 ```
 
 - Verificar se a instalção foi bem-sucedida e a versão instalada
-``` composer --version
+``` 
+composer --version
 ```
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
