@@ -55,7 +55,7 @@ php-fpm8.1 -v
 ```
 sudo apt install php8.1-common php8.1-mysql php8.1-xml php8.1-xmlrpc php8.1-curl php8.1-gd php8.1-imagick php8.1-cli php8.1-dev php8.1-imap php8.1-mbstring php8.1-opcache php8.1-soap php8.1-zip php8.1-redis php8.1-intl -y
 ```
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 <p align="center"><img src="public/assets/images/composerlogo.png" width="250" height="250"></p>
 
 ## Composer
@@ -91,15 +91,27 @@ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 composer --version
 ```
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+- Caso ocorra problema de permissão, utilize esse comando:
+```
+sudo chmod +x /usr/local/bin/composer
+```
 
-## Instalando Laravel via Composer
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+<p align="center"><img src="public/assets/images/composerlogo.png" width="250" height="250"></p>
 
 
+## Laravel
+  
+#### Sobre:
+
+Laravel é um framework web PHP de código aberto. É usado principalmente para construir aplicações web baseadas em PHP.
+
+O Laravel é adequado para desenvolvimento de aplicativos em pequena escala e em nível empresarial. Sua sintaxe elegante, recursos avançados e ferramentas robustas ajudam a simplificar o desenvolvimento de aplicativos da web. O Laravel é altamente escalável e possui suporte embutido para sistemas de cache distribuídos.
+
+#### Instalando Laravel via Composer
+
+```
+composer global require laravel/installer
+``
 
 
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
