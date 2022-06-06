@@ -14,7 +14,7 @@ Loja Virtual desenvolvida como trabalho obrigatório para a disciplina de **Proj
 -  **Padrão MVC**
 -  **API PayPal**
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-<p align="center"><img src="public/assets/images/phplogo.png" width="250" height="250"></p>
+<p align="center"><img src="public/assets/images/phplogo.png" width="200" height="200"></p>
 
 ## PHP 8.1.6
 
