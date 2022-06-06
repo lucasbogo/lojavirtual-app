@@ -10,6 +10,7 @@ Loja Virtual desenvolvida como trabalho obrigatório para a disciplina de **Proj
 -  **Composer version 2.3.5** 
 -  **LARAVEL 9.12.2**
 -  **MySQL 8.0.29**
+-  **IDE VSCode**
 -  **Banco de dados tratado com o padrão Factory** 
 -  **Padrão MVC**
 -  **API PayPal**
@@ -108,10 +109,35 @@ Laravel é um framework web PHP de código aberto. É usado principalmente para 
 
 O Laravel é adequado para desenvolvimento de aplicativos em pequena escala e em nível empresarial. Sua sintaxe elegante, recursos avançados e ferramentas robustas ajudam a simplificar o desenvolvimento de aplicativos da web. O Laravel é altamente escalável e possui suporte embutido para sistemas de cache distribuídos.
 
-#### Instalando Laravel via Composer
+#### Instalar o instalador do laravel
 
 ```
 composer global require laravel/installer
-``
+```
+
+#### Instalar Laravel -basta rodar o comando:
+
+```
+laravel
+```
+#### Para criar e instalar um projeto usando Laravel:
+```
+laravel new lojavirtual-app
+```
+#### Criar projeto Laravel utilizando Composer
+```
+composer create-project laravel/laravel lojavirtual-app
+```
+
+#### Para iniciar o servidor de desenvolvimento do Laravel, insira os comandos:
+```
+cd /lojavirtual-app
+php artisan serve
+```
+
+#### Pronto!
+```
+Iniciando o servidor de desenvolvimento Laravel: http://127.0.0.1:8000
+``` 
 
 
