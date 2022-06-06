@@ -4,7 +4,7 @@
 
 ## Sobre:
 
-Loja Virtual desenvolvida desenvolvida como trabalho obrigatório para a disciplina de Projeto Integrador I do curso de Tecnologia em Ánalise e Desenvolvimento de Sistemas.
+Loja Virtual desenvolvida como trabalho obrigatório para a disciplina de **Projeto Integrador I** do curso de **Tecnologia em Ánalise e Desenvolvimento de Sistemas**.
 
 -  **PHP 8.1.6** 
 -  **LARAVEL 9.12.2**
