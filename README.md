@@ -97,7 +97,7 @@ sudo chmod +x /usr/local/bin/composer
 ```
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-<p align="center"><img src="public/assets/images/composerlogo.png" width="250" height="250"></p>
+<p align="center"><img src="public/assets/images/laravel-logo.png" width="250" height="250"></p>
 
 
 ## Laravel
