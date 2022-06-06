@@ -13,7 +13,8 @@ Loja Virtual desenvolvida como trabalho obrigatório para a disciplina de **Proj
 -  **Banco de dados tratado com o padrão Factory** 
 -  **Padrão MVC**
 -  **API PayPal**
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+<p align="center"><img src="public/assets/images/phplogo.png" width="250" height="250"></p>
 
 ## PHP 8.1.6
 
