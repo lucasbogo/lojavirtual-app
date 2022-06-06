@@ -15,6 +15,7 @@ Loja Virtual desenvolvida como trabalho obrigatório para a disciplina de **Proj
 -  **API PayPal**
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
+<p align="center"><img src="public/assets/images/composerlogo.png" width="250" height="250"></p>
 
 ## Composer
 
