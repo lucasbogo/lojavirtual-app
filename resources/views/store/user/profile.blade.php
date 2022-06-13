@@ -14,7 +14,7 @@
 @endif
 
 <!--Exibir exceptions de nome usuário e senha-->
-@if ( @isset($errors) && count($erros) >0 )<!--Verificar se a variável 'erro' é maior do que 0, se for, mostrar mensagem de erro--> 
+@if ( @isset($errors) && count($errors) > 0 )<!--Verificar se a variável 'erro' é maior do que 0, se for, mostrar mensagem de erro--> 
 <div class="alert alert-warning">
 
     <!--Exibir os erros-->

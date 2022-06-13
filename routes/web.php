@@ -24,12 +24,10 @@ Route::get('/meu-perfil', [UserController::class, 'profile'])->name('store.user.
 // Rotas de autenticação, login e recuperação de senhas criadas pelo comando php artisan ui:auth
 Auth::routes();
 
-/* Rota para efetuar logout de usuário encontrada no dropdown sair [LOGIN]
- * Route::get('/login', [UserController::class, 'login'])->name('store.user.login'); 
- */
-
 // Rota para efetuar logout de usuário encontrada no dropdown sair [LOGOUT]
 Route::get('/logout', [UserController::class, 'logout'])->name('store.user.logout');
+
+
 
 // Grupo de rotas para trabalhar com callback
 Route::group(['middleware' => 'auth'],function() {
@@ -38,13 +36,17 @@ Route::group(['middleware' => 'auth'],function() {
    Route::get('/meu-perfil', [UserController::class, 'profile'])->name('store.user.profile');
 
    // Rota para atualização do PerfilUsuário encontrada em /views/store/user [ATUALIZAR-PERFIL]
-   Route::get('/atualizar-perfil', [UserController::class, 'update'])->name('user.profile');
+   Route::post('/atualizar-perfil', [UserController::class, 'update'])->name('update.profile');
+
 
    // Rota para visualizar a senha do Usuário  [PASSWORD]
    Route::get('/minha-senha', [UserController::class, 'password'])->name('user.password');
 
    // Rota para atualização da senha do Usuário [ATUALIZAR-SENHA]
-   Route::get('/atualizar-senha', [UserController::class, 'passwordUpdate'])->name('user.password');
+   Route::post('/atualizar-senha', [UserController::class, 'passwordUpdate'])->name('update.password');
+
+   // Rota retornar p/ PayPal...
+   Route::get('return-paypal', [PayPalControlles::class, 'return'])->name('return.paypal');
 });
 
 /*

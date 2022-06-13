@@ -1,10 +1,13 @@
 <?php
 
+
+use PayPalCheckoutSdk\Core\PayPalHttpClient;
+use PayPalCheckoutSdk\Core\SandboxEnvironment;
 use Psr\Log\LogLevel;
 
 return [
 
-    // Chave publica disponibilizada pelo PayPal
+    // Chave pública disponibilizada pelo PayPal
     'client_id' => env('PAYPAL_CLIENT_ID') ,
 
     // Secret_id ou chave privada, também disponibilizada pelo PayPal
@@ -28,5 +31,6 @@ return [
         // Tipo de log armazenado. FINE da mais detalhes em comparação com INFO, WARNING, ERROR
         'log.LogLevel' => 'FINE'
 
+        
     ]
 ];

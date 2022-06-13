@@ -4,6 +4,12 @@
 
 <h1 class="title">Meu Carrinho de Compras</h1>
 
+@if( session('message') )
+    <div class="alert alert-warning">
+        {{session('message')}}
+    </div>
+@endif
+
 <table class="table table-striped">
     <thead>
         <tr>
@@ -27,8 +33,9 @@
             <!--Exibir preço dinamicamente-->
             <td>R$ {{$product['item']->price}}</td>
             <td>
+                <!--Exibir quantidade do produto dinamicamente [DECREMENTAR]-->
                 <a href="{{route('decrement.cart', $product['item']->id)}}" class="item-add-remove">-</a>
-                <!--Exibir quantidade do produto dinamicamente-->
+                <!--Exibir quantidade do produto dinamicamente [INCREMENTAR]-->
                 {{$product['qtd']}}
                 <a href="{{route('add.cart', $product['item']->id)}}" class="item-add-remove">+</a>
             </td>

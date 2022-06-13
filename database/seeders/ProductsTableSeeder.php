@@ -31,15 +31,15 @@ class ProductsTableSeeder extends Seeder
         ]);
 
         Product::create([
-            'name'        => 'Fallout 3', // uniqid(date('YmdHis')), // unique id - data atual
-            'description' => 'Genêro: RPG; XboxOne; Bethesda', //uniqid(date('YmdHis')), // unique id - data atual
+            'name'        => 'fallout3',// uniqid(date('YmdHis')), // unique id - data atual  
+            'description' => 'Genêro: Survival Horror; XboxOne; Bethesda', // uniqid(date('YmdHis')), // unique id - data atual
             'image'       => 'produto3.png',
             'price'       => 10.2, 
         ]);
 
         Product::create([
-            'name'        => 'Fallout 4', // uniqid(date('YmdHis')), // unique id - data atual
-            'description' => 'Genêro: RPG; XboxOne; Bethesda', //uniqid(date('YmdHis')), // unique id - data atual
+            'name'        => 'fallout4',// uniqid(date('YmdHis')), // unique id - data atual
+            'description' => 'Genêro: Survival Horror; XboxOne; Bethesda', // uniqid(date('YmdHis')), // unique id - data atual
             'image'       => 'produto4.png',
             'price'       => 10.2, 
         ]);

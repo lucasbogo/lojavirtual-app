@@ -6,7 +6,6 @@
 
 @if ( session('success') ) <!--Mostra mensagem de perfil atualizado com sucesso dinamicamente-->
 <div class="alert alert-success">
-
     {{session('success')}}
 
 </div>
@@ -14,7 +13,7 @@
 @endif
 
 <!--Exibir exceptions de nome usuário e senha-->
-@if ( @isset($errors) && count($erros) >0 )<!--Verificar se a variável 'erro' é maior do que 0, se for, mostrar mensagem de erro--> 
+@if ( @isset($errors) && count($errors) > 0 )<!--Verificar se a variável 'erro' é maior do que 0, se for, mostrar mensagem de erro--> 
 <div class="alert alert-warning">
 
     <!--Exibir os erros-->
@@ -25,7 +24,7 @@
 </div>    
 @endif
 
-<form class="form" action="{{route('update.password')}}" method="POST"> <!--rota do formulário é o update profile-->
+<form class="form" action="{{route('update.password')}}" method="PUT"> <!--rota do formulário é o update profile-->
     {!! csrf_field() !!}<!--Método csrf_field que gera o token de autenticação do usuário-->
                                 <!--Segurança do Laravel que evita ataques csrf-->
 

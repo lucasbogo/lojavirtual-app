@@ -12,5 +12,10 @@ class Product extends Model
     use HasFactory;
 
     // Fillable = denominaão para os campos que podem ser preenchidos.
-    protected $fillable = ['name', 'description', 'price'];
+    protected $fillable = [
+        'name', 
+        'description',
+        'image', 
+        'price',
+    ];
 }
