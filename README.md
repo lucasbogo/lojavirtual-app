@@ -11,6 +11,7 @@ Loja Virtual desenvolvida como trabalho obrigatório para a disciplina de **Proj
 -  **PHP 8.1.6**
 -  **Composer version 2.3.5** 
 -  **LARAVEL 9.12.2**
+-  **Bootstrap** *precisa de refaatoração
 -  **MySQL 8.0.29**
 -  **IDE VSCode**
 -  **Banco de dados tratado com o padrão Factory** 
