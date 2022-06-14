@@ -6,6 +6,8 @@
 
 Loja Virtual desenvolvida como trabalho obrigatório para a disciplina de **Projeto Integrador I** do curso de **Tecnologia em Ánalise e Desenvolvimento de Sistemas**.
 
+#### Ferramentas utilizadas:
+
 -  **PHP 8.1.6**
 -  **Composer version 2.3.5** 
 -  **LARAVEL 9.12.2**
