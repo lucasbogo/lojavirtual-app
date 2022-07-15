@@ -1,10 +1,10 @@
 <p align="center"><img src="public/assets/images/logotipo.png" width="250" height="250"></p>
 
-# NewModern Loja Virtual
+# NewModern Loja Virtual - Treinamento
 
 #### Sobre:
 
-Loja Virtual desenvolvida como trabalho obrigatório para a disciplina de **Projeto Integrador I** do curso de **Tecnologia em Ánalise e Desenvolvimento de Sistemas**.
+Projeto didático. Intenção exclusiva em conhecer a estrutura do Framework.
 
 #### Ferramentas utilizadas:
 
